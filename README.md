@@ -23,19 +23,13 @@ que el usuario sienta que se tiene una conversación al ir recorriendo la págin
 
      . Navbar: básico con logo y 4 link.
 
-     . Header: Banner - imagen mensaje 01 / con 2 botones (bio y skills)
+     . Header: Banner
 
-     . Sección 1: servicios (digital - print - web)
+     . Sección 1: servicios
 
-     . Sección 2: mensaje 02
+     . Sección 2: proyectos
 
-     . Sección 3: proyectos x8 galeria de imágenes tipo lightbox (x definir)
-
-     . Sección 4: mensaje 03
-
-     . Sección 4: clientes destacados
-
-     . Sección 5: contacto y rrss
+     . Sección 3: mensaje 03
 
      . Footer: logos personales x3.
 
@@ -74,8 +68,4 @@ que el usuario sienta que se tiene una conversación al ir recorriendo la págin
 
 ### Iconos redes sociales:
 
-## - SKETCH DESKTOP
-![](img-maqueta/20181106_221708.jpg?raw=true)
-## - SKETCH MOBIL
-![](img-maqueta/20181106_221230.jpg?raw=true)
 ## - CLASES PARA CSS
