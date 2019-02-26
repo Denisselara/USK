@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title> Denisse Lara - Portfolio </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!--API MAPA Y CLIMA-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="Assets/vendor/leaflet/css/leaflet.css">
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="Assets/css/style.css">
+  <!--GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!--favicon-->
+  <link rel="icon" type="image/png" href="Assets/img/logo.png" />
+</head>
+
+<body>
+  <!--NAV -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand logo_absolute" href="index.html"><img src="Assets/img/logo1.png" alt="" class="img__logonav"> </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right color-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="bio.html">Bio</a></li>
+
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li class="active"><a href="#">Contacto</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div> <!--Cierre container fluid-->
+  </nav>
+
+
+<!--COMIENZO DE LA API MAPA Y CLIMA -->
+<div class="container-fluid color__2">
+
+<div class="padding__top container">
+
+      <div class="col-lg-12 col-md-12 col-sm-12 container__top">
+
+    <div class="row">
+      <div class="col-md-4 col-sm-8 form1 margin__bottom animated fadeInUpBig">
+        <h3>Envíame un mensaje</h3>
+        <p>Contestaré lo antes posible</p>
+        <hr>
+        <form>
+      <div class="form-group2">
+        <label for="exampleFormControlInput1">Nombre</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="¿Con quien tengo el gusto?">
+      </div>
+      <div class="form-group2">
+        <label for="exampleFormControlInput1">Email</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="¿Donde puedo responderte?">
+      </div>
+
+      <div class="form-group2">
+        <label for="exampleFormControlTextarea1">Mensaje</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Cuéntame que necesitas"></textarea>
+      </div>
+    </form>
+
+     <button type="button" class="btn btn-default btn-md margin__left"> Enviar</button>
+      </div>
+
+      <div class="col-md-5 col-sm-6  animated fadeInDownBig mapaq margin__bottom">
+        <div id="map" class="radius-5px"></div>
+      </div>
+
+      <div class="col-md-3 col-sm-5 animated fadeInUpBig margin__bottom">
+        <div class="row">
+          <div class="col-md-12 radius-5px">
+            <div class="form-group2">
+              <h4><i class="glyphicon glyphicon-map-marker"></i> Encuéntrame en:</h4>
+              <select name="select" id="select" class="form-control">
+                <option value="re" selected>Reñaca</option>
+                <option value="vlp">Valparaíso</option>
+                <option value="sa">San Antonio</option>
+
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div id="resumen_container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 id="resumen"></h2>
+              <br>
+              <img id="image" src="" alt="weather-icon" class="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div><!--cierre del md6-->
+
+
+
+
+    <!--<div class="col-md-6">
+      <h3 class="">Sígueme:</h3>
+        <article>
+          <a href="http://www.linkedin.com/in/denisselarav"><i class="fab fa-4x fa-instagram fa-linkedin"></i></a>
+          <i class="fab fa-4x fa-twitter-square icon__footer"></i>
+        </article>
+    </div>-->
+
+</div><!--cierre del row principal-->
+
+</div>
+
+<!--MENSAJE 0.3 -->
+<section class="container-fluid" id="msj3">
+
+  <h4 class="mensaje">" ALL FOR DESIGN & DESIGN FOR ALL"</h4>
+</section>
+
+  <!--FOOTER -->
+  <footer class="container-fluid footer__fixed">
+
+    <ul class="footer__logos">
+      <a href=""><li class="footer__inline"><img src="Assets/img/usklogo.png" alt=""></li></a>
+        <a href=""><li class="footer__inline"><img src="Assets/img/logo.png" alt=""></li></a>
+          <a href=""><li class="footer__inline"><img src="Assets/img/il.png" alt=""></li></a>
+  </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+   crossorigin="anonymous">
+  </script>
+    <!-- Jquery 3.3.1 -->
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>-->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Fontawesome 5 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!--api mapa y clima-->
+    <!-- API DE GOOGLE MAPS / DEBES INSTER TU KEY EN LA URL-->
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH-l5zUAcR-HWlXUNR4mm7914puT1l3Vw&callback=initMap" async defer></script>-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFo_wJ8ypcvL7bxaCbCoDas3i9pZBjiu4"></script>
+    <script src="Assets/vendor/leaflet/js/leaflet.js" ></script>
+    <script src='https://unpkg.com/leaflet.gridlayer.googlemutant@latest/Leaflet.GoogleMutant.js'></script>
+    <script src="Assets/js/leaflet.js"></script>
+    <script src="Assets/js/script.js"></script>
+  </body>
+  </html>
