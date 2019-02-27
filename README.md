@@ -15,13 +15,12 @@ cargo profesional en una empresa y contacto de posibles clientes.
 
 *Responsive*
 
-#URL
-### http://186.64.118.50/~fev1hlara/
-
 # DATOS PARA ENTRAR A WORDPRESS
-### name: fev1hlar_portafolio
-### User: fev1hlar_fev1hla
-### pass kNi9BSWAc@T3
+Url:  http://186.64.118.50/~fev1hlara/
+User: denisselarav
+Pass: p0w13-f4v3l4
 
-#LINK DE VIDEO UTILIZANDO EL SITIO
+# LINK DE VIDEO UTILIZANDO EL SITIO
 https://drive.google.com/file/d/1G6uyxVxcXChj4GQpZkY2LjLMTgBI1H3n/view
+
+Espero les guste! 
