@@ -13,7 +13,7 @@ cargo profesional en una empresa y contacto de posibles clientes.
 
 **Traspaso a Wordpress como un theme, con secciones editables**
 
-**Responsiv**
+**Responsive**
 
 # DATOS PARA ENTRAR A WORDPRESS
 Url:  http://186.64.118.50/~fev1hlara/
