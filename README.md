@@ -7,7 +7,7 @@
 Portafolio que hace un recorrido por los trabajos, habilidades y personalidad de
 Denisse Lara, con el fin de poder mostrar su desarrollo en el diseño gráfico.
 La finalidad del proyecto es complementar de manera positiva presentaciones para
-cargo profesional en una empresa y contacto de posibles clientes.
+cargo profesional en una empresa y contacto de nuevos clientes.
 
 **Maquetado utilizando html, css, js, jquery , bootstrap**
 
