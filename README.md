@@ -16,9 +16,9 @@ cargo profesional en una empresa y contacto de posibles clientes.
 **Responsive**
 
 # DATOS PARA ENTRAR A WORDPRESS
-Url:  http://186.64.118.50/~fev1hlara/
-User: denisselarav
-Pass: p0w13-f4v3l4
++ Url:  http://186.64.118.50/~fev1hlara/
++ User: denisselarav
++ Pass: p0w13-f4v3l4
 
 # LINK DE VIDEO UTILIZANDO EL SITIO
 https://drive.google.com/file/d/1G6uyxVxcXChj4GQpZkY2LjLMTgBI1H3n/view
