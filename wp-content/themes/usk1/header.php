@@ -7,10 +7,14 @@
     <?php wp_head() ?>
   </head>
 <body>
+<span>
+  <a href="/front-page.php">
   <?php
   	$custom_logo_id = get_theme_mod( 'custom_logo' );
   	$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
   ?>
+</span>
+</a>
   <!-- COMIENZO DE LA NAVEGACIÓN -->
    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid margin__right">

@@ -5,8 +5,8 @@
 <div id="particles">
   <div id="intro">
         <div class="row blogtitulo__size">
-          <div class="col-md-12">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/3icon.png" alt="" class="center-block animated fadeInLeft">
+          <div class="col-md-12 ">
+            <img src="<?php echo get_template_directory_uri();?>/Assets/img/3icon.png" alt="" class="center-block animated fadeInLeft img-responsive">
             <h1>PROYECTOS</h1>
             <h3>"Work Work Work Work"</h3>
 
@@ -17,244 +17,93 @@
 </div><!--cierre div particulas-->
 
 <!--PROYECTOS -->
-<section class="color__1">
-  <div class="container-fluid container__top">
+    <section>
 
 
 
-  </div>
+        <?php
+          $arg = array(
+            'category_name' => 'PROYECTOS',
+            'post_type'		 => 'proyecto',
+            'posts_per_page' => -1,
+            'post_id' => null,
+          );
+          $get_arg = new WP_Query( $arg );
+          while ( $get_arg->have_posts() ) {
+            $get_arg->the_post();
+          ?>
+
+        <ul class="gridder">
+          <!-- You can load specify which content is loaded by specifying the #ID of the div where the content is  -->
+          <li class="gridder-list" data-griddercontent="#<?php echo get_the_id(); ?>">
+            <?php $imagen1 = get_field( 'imagen1' ); ?>
+            <?php if ( $imagen1 ) { ?>
+            	<img src="<?php echo $imagen1['url']; ?>" alt="<?php echo $imagen1['alt']; ?>" class="img-responsive"/>
+            <?php } ?>
+
+          </li>
+        </ul>
+
+          <!-- Gridder content -->
+          <div id="<?php echo get_the_id(); ?>" class="gridder-content">
+            <div class="row">
+              <div class="col-md-12">
+
+                <div class="row">
+                <div class="col-md-3"></div>
+                  <div class="col-md-6 margin__bottom">
+                      <?php $imagen2 = get_field( 'imagen2' ); ?>
+                        <?php if ( $imagen2 ) { ?>
+                	           <img class="img-responsive" src="<?php echo $imagen2['url']; ?>" alt="<?php echo $imagen2['alt']; ?>" class="img-responsive"/>
+                        <?php } ?>
+                      </div>
+                    <div class="col-md-3"></div>
+                  </div>
+
+                <div class="row text__alingleft">
+                  <div class="col-md-3"></div>
+                  <div class="col-md-3">
+                    <h1 class="margin__cero"><?php the_field( 'titulo' ); ?></h1>
+                      <p><?php the_field( 'descripcion' ); ?></p>
+                  </div>
+                    <div class="col-md-3">
+                      <ul >
+                        <li class="display__inline">
+                          <?php $herramientas_img = get_field( 'herramientas-img' ); ?>
+                            <?php if ( $herramientas_img ) { ?>
+                  	          <img class="min__img" src="<?php echo $herramientas_img['url']; ?>" alt="<?php echo $herramientas_img['alt']; ?>"/>
+                          <?php } ?>
+                        </li>
+                        <li class="display__inline">
+                          <?php $herramientas_img2 = get_field( 'herramientas-img2' ); ?>
+                            <?php if ( $herramientas_img2 ) { ?>
+                            	<img class="min__img" src="<?php echo $herramientas_img2['url']; ?>" alt="<?php echo $herramientas_img2['alt']; ?>" />
+                          <?php } ?>
+                        </li>
+
+                        <li class="display__inline">
+                          <?php $herramientas_img3 = get_field( 'herramientas-img3' ); ?>
+                            <?php if ( $herramientas_img3 ) { ?>
+                            <img class="min__img" src="<?php echo $herramientas_img3['url']; ?>" alt="<?php echo $herramientas_img3['alt']; ?>" />
+                            <?php } ?>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3"></div>
+                  </div>
 
 
-  <ul class="gridder">
-    <!-- You can load specify which content is loaded by specifying the #ID of the div where the content is  -->
-    <li class="gridder-list" data-griddercontent="#content1">
-      <img src="<?php echo get_template_directory_uri();?>/Assets/img/1.png" class="img-responsive" />
-    </li>
-    <li class="gridder-list" data-griddercontent="#content2">
-      <img src="<?php echo get_template_directory_uri();?>/Assets/img/14.png" class="img-responsive" />
-    </li>
-    <li class="gridder-list" data-griddercontent="#content3">
-      <img src="<?php echo get_template_directory_uri();?>/Assets/img/2.png" class="img-responsive" />
-    </li>
-    <li class="gridder-list" data-griddercontent="#content4">
-      <img src="<?php echo get_template_directory_uri();?>/Assets/img/15.png" class="img-responsive" />
-    </li>
-    <li class="gridder-list" data-griddercontent="#content5">
-      <img src="<?php echo get_template_directory_uri();?>/Assets/img/3.png" class="img-responsive" />
-    </li>
-    <li class="gridder-list" data-griddercontent="#content6">
-      <img src="<?php echo get_template_directory_uri();?>/Assets/img/12.png" class="img-responsive" />
-    </li>
-    <li class="gridder-list" data-griddercontent="#content7">
-      <img src="<?php echo get_template_directory_uri();?>/Assets/img/4.png" class="img-responsive" />
-    </li>
-    <li class="gridder-list" data-griddercontent="#content8">
-      <img src="<?php echo get_template_directory_uri();?>/Assets/img/8.png" class="img-responsive" />
-    </li>
-  </ul>
-
-<!-- Gridder content -->
-<div id="content1" class="gridder-content">
-  <div class="row">
-    <div class="col-md-7">
-      <img src="<?php echo get_template_directory_uri();?>/Assets/img/hairwoman.jpg" class="img-responsive" />
-    </div>
-    <div class="col-md-5"><!--contenido texto etc.-->
-        <div class="row">
-            <div class="col-md-6 align__left">
-            <h1>Florecer</h1>
-            <p>Proyecto personal, desarrollo de Montaje y retoque fotográfico, utilización de vectores y brushes de psd. </p>
-            </div>
-              <div class="col-md-6">
-              <img src="<?php echo get_template_directory_uri();?>/Assets/img/psd.png" alt="" class="detalles__programas img-xs">
               </div>
-
-          </div>
-          <div class="row detalles_proyectos">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/hair1.png" alt="" class="img-xs">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/hair1.png" alt="" class="img-xs">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/hair1.png" alt="" class="img-xs">
-         </div>
-    </div>
-  </div>
-</div>
-
-<div id="content2" class="gridder-content">
-  <div class="row">
-    <div class="col-md-7">
-      <img src="<?php echo get_template_directory_uri();?>/Assets/img/MEDICION.INTELIGENTE-01.jpg" class="img-sm" />
-    </div>
-    <div class="col-md-5"><!--contenido texto etc.-->
-        <div class="row">
-            <div class="col-md-6 align__left">
-            <h1>Serie Instrucciones para la Medición Inteligente</h1>
-            <p> Línea gráfica para folletos con instrucciones e información sobre la Medición inteligente,
-            Diagramación de texto e iconografía. </p>
             </div>
-              <div class="col-md-6">
-              <img src="<?php echo get_template_directory_uri();?>/Assets/img/ai.png" alt="" class="detalles__programas img-xs">
-              </div>
-                <div class="col-md-6"></div>
           </div>
-          <div class="row detalles_proyectos">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/detalleN.png" alt="" class="img-xs">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/detalleN.png" alt="" class="img-xs">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/detalleN.png" alt="" class="img-xs">
-         </div>
-    </div>
-  </div>
-</div>
 
-<div id="content3" class="gridder-content">
-  <div class="row">
-    <div class="col-md-7">
-      <img src="<?php echo get_template_directory_uri();?>/Assets/img/aves.png" class="img-responsive" />
-    </div>
-    <div class="col-md-5"><!--contenido texto etc.-->
-        <div class="row">
-            <div class="col-md-6 align__left">
-            <h1> Illustración personal proyecto USK</h1>
-            <p> Illustración realizada con técnica personal </p>
-            </div>
-              <div class="col-md-6">
-              <img src="<?php echo get_template_directory_uri();?>/Assets/img/ai.png" alt="" class="detalles__programas img-xs">
-              </div>
-                <div class="col-md-6"></div>
-          </div>
-          <div class="row detalles_proyectos">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/detalleN.png" alt="" class="img-xs">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/detalleN.png" alt="" class="img-xs">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/detalleN.png" alt="" class="img-xs">
-         </div>
-    </div>
-  </div>
-</div>
+  <?php } wp_reset_postdata(); ?>
 
-<div id="content4" class="gridder-content">
-  <div class="row">
-    <div class="col-md-7">
-      <img src="<?php echo get_template_directory_uri();?>/Assets/img/codelco-div.png" class="img-responsive" />
-    </div>
-    <div class="col-md-5"><!--contenido texto etc.-->
-        <div class="row">
-            <div class="col-md-6 align__left">
-            <h1> Illustración personal proyecto USK</h1>
-            <p> Illustración realizada con técnica personal </p>
-            </div>
-              <div class="col-md-6">
-              <img src="<?php echo get_template_directory_uri();?>/Assets/img/ai.png" alt="" class="detalles__programas img-xs">
-              </div>
-                <div class="col-md-6"></div>
-          </div>
-          <div class="row detalles_proyectos">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/detalleN.png" alt="" class="img-xs">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/detalleN.png" alt="" class="img-xs">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/detalleN.png" alt="" class="img-xs">
-         </div>
-    </div>
-  </div>
-</div>
 
-<div id="content5" class="gridder-content">
-  <div class="row">
-    <div class="col-md-7">
-      <img src="<?php echo get_template_directory_uri();?>/Assets/img/cat.png" class="img-responsive" />
-    </div>
-    <div class="col-md-5"><!--contenido texto etc.-->
-        <div class="row">
-            <div class="col-md-6 align__left">
-            <h1> Illustración personal proyecto USK</h1>
-            <p> Illustración realizada con técnica personal </p>
-            </div>
-              <div class="col-md-6">
-              <img src="<?php echo get_template_directory_uri();?>/Assets/img/ai.png" alt="" class="detalles__programas img-xs">
-              </div>
-                <div class="col-md-6"></div>
-          </div>
-          <div class="row detalles_proyectos">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/detalleN.png" alt="" class="img-xs">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/detalleN.png" alt="" class="img-xs">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/detalleN.png" alt="" class="img-xs">
-         </div>
-    </div>
-  </div>
-</div>
+    </section>
 
-<div id="content6" class="gridder-content">
-  <div class="row">
-    <div class="col-md-7">
-      <img src="<?php echo get_template_directory_uri();?>/Assets/img/prendete.jpg" class="img-responsive" />
-    </div>
-    <div class="col-md-5"><!--contenido texto etc.-->
-        <div class="row">
-            <div class="col-md-6 align__left">
-            <h1> Illustración personal proyecto USK</h1>
-            <p> Illustración realizada con técnica personal </p>
-            </div>
-              <div class="col-md-6">
-              <img src="<?php echo get_template_directory_uri();?>/Assets/img/ai.png" alt="" class="detalles__programas img-xs">
-              </div>
-                <div class="col-md-6"></div>
-          </div>
-          <div class="row detalles_proyectos">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/detalleN.png" alt="" class="img-xs">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/detalleN.png" alt="" class="img-xs">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/detalleN.png" alt="" class="img-xs">
-         </div>
-    </div>
-  </div>
-</div>
 
-<div id="content7" class="gridder-content">
-  <div class="row">
-    <div class="col-md-7">
-      <img src="<?php echo get_template_directory_uri();?>/Assets/img/eficiencia.jpg" class="img-responsive" />
-    </div>
-    <div class="col-md-5"><!--contenido texto etc.-->
-        <div class="row">
-            <div class="col-md-6 align__left">
-            <h1> Illustración personal proyecto USK</h1>
-            <p> Illustración realizada con técnica personal </p>
-            </div>
-              <div class="col-md-6">
-              <img src="<?php echo get_template_directory_uri();?>/Assets/img/ai.png" alt="" class="detalles__programas img-xs">
-              </div>
-                <div class="col-md-6"></div>
-          </div>
-          <div class="<?php echo get_template_directory_uri();?>/row detalles_proyectos">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/detalleN.png" alt="" class="img-xs">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/detalleN.png" alt="" class="img-xs">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/detalleN.png" alt="" class="img-xs">
-         </div>
-    </div>
-  </div>
-</div>
 
-<div id="content8" class="gridder-content">
-  <div class="row">
-    <div class="col-md-7">
-      <img src="<?php echo get_template_directory_uri();?>/Assets/img/lobo.png" class="img-responsive" />
-    </div>
-    <div class="col-md-5"><!--contenido texto etc.-->
-        <div class="row">
-            <div class="col-md-6 align__left">
-            <h1> Illustración personal proyecto USK</h1>
-            <p> Illustración realizada con técnica personal </p>
-            </div>
-              <div class="col-md-6">
-              <img src="<?php echo get_template_directory_uri();?>/Assets/img/ai.png" alt="" class="detalles__programas img-xs">
-              </div>
-                <div class="col-md-6"></div>
-          </div>
-          <div class="row detalles_proyectos">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/detalleN.png" alt="" class="img-xs">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/detalleN.png" alt="" class="img-xs">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/detalleN.png" alt="" class="img-xs">
-         </div>
-    </div>
-  </div>
-</div>
-</section>
 <!--CLIENTES -->
 <div class="container-fluid clientes__white">
   <section class="clientes__inner">

@@ -7,65 +7,20 @@ Proyecto Final
 *Tema seleccionado* Portafolio personal de proyectos y servicios gráficos
 
 *Los objetivos para la interfaz (ui) y para la experiencia del usuario (ux)*
-página en donde el contenido debe consumirse de manera rápida y objetiva,
-sin dejar de lado la experiencia de diseño y comunicación en todo momento
-que el usuario sienta que se tiene una conversación al ir recorriendo la página.
+Portafolio que hace un recorrido por los trabajos, habilidades y personalidad de
+Denisse Lara, con el fin de poder mostrar su desarrollo en el diseño gráfico.
 
-## - REQUERIMIENTOS DEL SITIO
-  Estructura de maquetado con Bootstrap 3 - Sistema de Grillas responsive,
-  javascript y plugins jquery.
+*Maquetado utilizando html, css, js, jquery , bootstrap*
 
-# MAQUETACIÓN
+*Traspaso a Wordpress como un theme, con secciones editables*
 
-## - REQUISITOS ESPECIFICOS:
-
- ###  1. Mockup tipo Portafolio :
-
-     . Navbar: básico con logo y 4 link.
-
-     . Header: Banner
-
-     . Sección 1: servicios
-
-     . Sección 2: proyectos
-
-     . Sección 3: mensaje 03
-
-     . Footer: logos personales x3.
-
-  ### 2. Guía de estilos:
-     . Imágenes
-     . Colores
-     . Tipografías
-     . Iconos
-
-  ###  REQUERIMIENTOS:
-  . Diseño responsive
-  . Portafolio
-  . Marca
-
-##  - INFORMACIÓN DE DISEÑO, EN BASE A LA GUÍA DE ESTILOS
-
-###  Colores y Tipografías:
-
-     . NAVBAR:
-      -
-
-      . HEADER-BANNER:
-     -
-
-     . SECCION 1
-     -
-
-    . SECCIÓN 2
-     -
-
-###  Tipografías
+*Responsive*
 
 
-###  Imágenes:
+# DATOS PARA ENTRAR A WORDPRESS
+. name: fev1hlar_portafolio
+. User: fev1hlar_fev1hla
+. pass kNi9BSWAc@T3
 
-
-### Iconos redes sociales:
-
-## - CLASES PARA CSS
+#LINK DE VIDEO UTILIZANDO EL SITIO
+https://drive.google.com/file/d/1G6uyxVxcXChj4GQpZkY2LjLMTgBI1H3n/view

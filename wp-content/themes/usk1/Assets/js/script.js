@@ -8,8 +8,8 @@ jQuery(document).ready(function($){
 		animationSpeed: 400,
 		animationEasing: "easeInOutExpo",
 		showNav: true, // Show Navigation
-		nextText: ">", // Next button text
-		prevText: "<", // Previous button text
+		nextText: "", // Next button text
+		prevText: "", // Previous button text
 		closeText: "x", // Close button text
 		onStart: function () {
 			//Gridder Inititialized

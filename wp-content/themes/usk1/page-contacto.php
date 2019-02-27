@@ -6,9 +6,9 @@
   <div id="intro">
         <div class="row blogtitulo__size">
           <div class="col-md-12">
-            <img src="<?php echo get_template_directory_uri();?>/Assets/img/3icon.png" alt="" class="center-block animated fadeInLeft">
-            <h1>PROYECTOS</h1>
-            <h3>"Work Work Work Work"</h3>
+            <img src="<?php echo get_template_directory_uri();?>/Assets/img/ojo2.png" alt="" class="center-block animated fadeInLeft">
+            <h1>CONTACTO</h1>
+            <h3>"¿Tienes un proyecto interesante en que pueda ayudar?"</h3>
 
           </div>
         </div>
@@ -19,9 +19,9 @@
 <!--COMIENZO DE LA API MAPA Y CLIMA -->
 <div class="container-fluid color__2">
 
-<div class="padding__top container">
+<div class="container">
 
-      <div class="col-lg-12 col-md-12 col-sm-12 container__top">
+      <div class="col-lg-12 col-md-12 col-sm-12">
 
     <div class="row">
       <div class="col-md-4 col-sm-8 form1 margin__bottom animated fadeInUpBig">

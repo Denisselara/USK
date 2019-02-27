@@ -83,28 +83,28 @@
   <!--PROYECTOS -->
   <section>
     <div class="container-fluid">
-      <h3 class="titulos"> DESTACADOS </h3>
+      <h3 class="titulos"> CONOCE MIS PROYECTOS </h3>
       <div class="row">
         <div class="col-md-3 padding__cero container">
-          <a href="proyectos.html">
+          <a href="/~fev1hlara/proyectos">
             <img src="<?php echo get_template_directory_uri();?>/Assets/img/5.png" alt="image" class="img-responsive">
             <div class="overlay"></div>
           </a>
         </div>
         <div class="col-md-3 padding__cero container">
-          <a href="proyectos.html">
+          <a href="/~fev1hlara/proyectos">
             <img src="<?php echo get_template_directory_uri();?>/Assets/img/6.png" alt="image" class="img-responsive">
             <div class="overlay"></div>
           </a>
         </div>
         <div class="col-md-3 padding__cero container">
-          <a href="proyectos.html">
+          <a href="/~fev1hlara/proyectos">
             <img src="<?php echo get_template_directory_uri();?>/Assets/img/4.png" alt="image" class="img-responsive">
             <div class="overlay"></div>
           </a>
         </div>
         <div class="col-md-3 padding__cero container">
-          <a href="proyectos.html">
+          <a href="/~fev1hlara/proyectos">
             <img src="<?php echo get_template_directory_uri();?>/Assets/img/8.png" alt="image" class="img-responsive">
             <div class="overlay"></div>
           </a>
